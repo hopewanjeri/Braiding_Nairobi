@@ -3,7 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
-import 'package:myapp/page-1/rectangle-52.dart';
+// import 'package:myapp/page-1/rectangle-52.dart';
 // import 'package:myapp/page-1/onboarding-screen-1.dart';
 // import 'package:myapp/page-1/onboarding-screen-1-VkM.dart';
 // import 'package:myapp/page-1/.dart';
@@ -12,7 +12,7 @@ import 'package:myapp/page-1/rectangle-52.dart';
 // import 'package:myapp/page-1/onboading-screen-3.dart';
 // import 'package:myapp/page-1/onboading-screen-3-kR7.dart';
 // import 'package:myapp/page-1/sign-up.dart';
-// import 'package:myapp/page-1/first-screen.dart';
+import 'package:myapp/page-1/first-screen.dart';
 // import 'package:myapp/page-1/braider-or-customer.dart';
 // import 'package:myapp/page-1/order-accepted.dart';
 // import 'package:myapp/page-1/login-screen.dart';
@@ -66,20 +66,22 @@ import 'package:myapp/page-1/rectangle-52.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-	@override
-	Widget build(BuildContext context) {
-	return MaterialApp(
-		title: 'Flutter',
-		debugShowCheckedModeBanner: false,
-		scrollBehavior: MyCustomScrollBehavior(),
-		theme: ThemeData(
-		primarySwatch: Colors.blue,
-		),
-		home: Scaffold(
-		body: SingleChildScrollView(
-			child: Scene(),
-		),
-		),
-	);
-	}
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter',
+      debugShowCheckedModeBanner: false,
+      scrollBehavior: MyCustomScrollBehavior(),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: Scaffold(
+        body: SingleChildScrollView(
+          child: Scene(),
+        ),
+      ),
+    );
+  }
 }
